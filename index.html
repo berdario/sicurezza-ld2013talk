@@ -1,380 +1,858 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+      <title>Sicurezza, questa sconosciuta
+      </title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+      <meta name="author" content="Dario Bertini" />
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+      <link rel="stylesheet" href="css/reveal.min.css" />
+      <link rel="stylesheet" href="css/theme/default.css" id="theme" />
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+      <!-- For syntax highlighting -->
+      <link rel="stylesheet" href="lib/css/zenburn.css" />
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+      <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+      <script>
+        document.write( '
+        <link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print" />' );
+      </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+      <!--[if lt IE 9]>
+          <script src="lib/js/html5shiv.js">
+          </script>
+          <![endif]-->
+    </head>
 
-	<body>
+    <body>
 
-		<div class="reveal">
+      <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+          <section>
+            <h1>Sicurezza, questa sconosciuta</h1>
+          </section>
+          <section>
+            <p>Di cosa non ci interesseremo:
+            <ul>
+              <li class="fragment">Firewall</li>
+              <li class="fragment">Antivirus</li>
+            </ul>
+            </p>
+          </section>
 
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+          <section>
+            <p>
+              La sicurezza è un campo vastissimo, con diversi criteri/requisiti:
+            </p>
+            <ul>
+              <li>Confidentiality</li>
+              <li>Integrity</li>
+              <li>Availability</li>
+              <li>Authenticity</li>
+              <li>Non-repudiation VS Plausible Deniability</li>
+              <li>etc...</li>
+            </ul>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
+          </section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+          <section>
+            Quello che ci interessa è proteggere i nostri dati, sia che siano a riposo sui nostri PC, sia che siano in movimento
+          </section>
 
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
+          <section>
+            <h2>Citazione "Obbligatoria"</h2>
+            <blockquote cite="https://www.schneier.com/crypto-gram-0005.html">
+              &ldquo;Security is a process, not a product. Products provide some protection, but the only way to effectively do business in an insecure world is to put processes in place that recognize the inherent insecurity in the products. The trick is to reduce your risk of exposure regardless of the products or patches.&rdquo;
+            </blockquote>
+            <em>Bruce Schneier</em>
+          </section>
 
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+          <section>
+            Ma quindi?
+          </section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+          <section>
+            Quali sono le minacce? Quali sono i rischi?
+          </section>
 
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+          <section>
+            <section>
+              Per scoprirlo, fortunatamente abbiamo a disposizione internet...
+            </section>
+            <section>
+              <p>
+                Piena di... 
+              </p>
+              <img src="images/David_irving.png"/>
+            </section>
+            <section>
+              <p>
+                ...personaggi...
+              </p>
+              <img src="images/tinfoilhatters.jpg"/>
+            </section>
+            <section>
+              <p>
+                ...singolari...
+              </p>
+              <img src="images/barack.jpg"/>
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+            </section>
+            <section>
+              <a href="http://www.reddit.com/r/IAmA/comments/sq7cy/iama_a_malware_coder_and_botnet_operator_ama/">IAmA a malware coder and botnet operator, AMA</a>
 
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+              <img src="images/absurdmallory.jpg"/>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> -
-						<a href="?#/themes">Default</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
+            </section>
+            <section>
+              Una botnet di circa 10000 computer
+            </section>
+          </section>
+          <section>
+            <section>
+              <h3>Profitto?</h3>
+              <ul>
+                <li>Bitcoin Mining</li>
+                <li>Conti correnti e carte di credito</li>
+              </ul>
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
+            </section>
+            <section>
+              <h3>Bitcoin</h3>
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
 
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
+              <p>aprile 2012 -> ~2000$ al mese
+              </p>
+              <p class="fragment">
+                difficulty = 1,508,590
+                <br/>
+                cambio BTC/$ = 5.08
+                <br/>
 
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
+              </p>
 
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+              <p>ora (ottobre 2013) -> ~200$ al mese
+              </p>
+              <p class="fragment">
+                difficulty = 267,731,249
+                <br/>
+                cambio BTC/$ = 178.80
+                <br/>
+              </p>
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
 
-    var nodes = document.querySelectorAll( selector );
+              <p class="fragment">
+                http://www.bitcoinx.com/profit/
+                https://en.bitcoin.it/wiki/difficulty
+              </p>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+            </section>
+            <section>
+              <h3>Carte di credito
+              </h3>
 
-      if( !node.className ) ) {
-        node.className += ' roll';
-      }
-    };
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+              <blockquote>I do not cash out the bank accounts or credit cards, I just sell the information [...], there isn't even a law against such in most countries, dealing with stolen information is most of the time a legaly greyzone 
+              </blockquote>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+            </section>
+          </section>
+          <section>
+            <section>
+              <h3>dettagli interessanti:
+              </h3>
 
-				<section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+              <blockquote>
+                <p>&gt; most botnet operators never coded or scripted a single line in their life
+                </p>
+                That's kind of the scary part. Illegal activity is being commoditized.
+              </blockquote>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
+              I malintenzionati non sono più intelligenti/competenti di voi, spesso sono semplici script kiddie
+            </section>
+            <section>
 
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
+              <blockquote>With basic perl skills your malware gets randomly recompiled very often and circumvents all the AVs. If you acquire basic asm knowledge you get a bootkit.
+              </blockquote>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+            </section>
+            <section>
+              <ul>
+                <li>If the attachment is ending in .exe and pretending to be something else, it's malware for sure. If it's a .pdf it can only infect you if you haven't patched your Adobe Reader (Is now done automaticly). Cybercriminals use 0day exploits only on valueable targets like Iranian power plants or companies with intellectual properties and fucking lot of cash.
+                </li>
+                <li class="fragment">Facebook friends don't share funny cat pictures on randomly generated domain names.
+                </li>
+                <li class="fragment">If your AV says it's clean or even if Virustotal gives you 0/43 it can still be malware, been there, seen that. Srsly, don't trust your AV.
+                </li>
+                <li class="fragment">Windows updates, yes, do them. If you have a pirated copy, just buy that shit or
+                <b>use linux
+                </b>.
+                </li>
+                <li class="fragment">If you are super paranoid, buy a netbook and use a LiveCD or similiar on it whenever you put your CC information in.
+                </li>
+              </ul>
+            </section>
+            <section>
+              <blockquote>
+                Antiviri don't work, firewalls never helped, fraud detection system are blind when abusing the victim computer as a proxy. The only cure is strong cryptography and simple yet unbreakable solutions, even if it's unconvinient. Some European countries for example already use private/public key authentification for banking and only allow credit cards with chips. Magnetic stripes are the most hilarious thing ever
+              </blockquote>
+            </section>
+            <section>
+              <blockquote>[I get] about 500-1000 [new infected machines] a day, weekends more. I'm thinking about just buying them in bulks and milking them for bitcoins. Asian installs are very cheap, 15$/1000 installs and have good GPUs.
+              </blockquote>
+            </section>
+            <section>
+              <blockquote>
+                Stealing bitcoin wallets is now really hard. To get the password of the wallet.dat you need to inject into the bitcoinqt.exe process and grab the password from the memory in a timeframe of 1-2 seconds after he entered it. Or just keylog and search tru thousands of keystrikes.
+              </blockquote>
+            </section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+          </section>
+          <section>
+            <section>I firewall non aiutano?
+            </section>
 
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+            <section>
+              <h3>Internet Protocol Crash Course
+              </h3>
+              <p>
+                <img src="images/domain.png"/>
+              </p>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+              <img src="images/ipaddress.png"/>
+            </section>
+            <section>
 
-			</div>
+              <img src="images/UDP_encapsulation.png"/>
 
-		</div>
+            </section>
+            <section>
+              <img src="images/ipv6frame.png"/>
+            </section>
+            <section>
+              <img src="images/tcpheader.png"/>
+            </section>
+            <section>
+              <h3>Firewall:
+              </h3>
+              <ul>
+                <li>Packet filter
+                </li>
+                <li>Stateful Packet filter
+                </li>
+                <li>Application layer filtering/ Deep packet inspection
+                </li>
+              </ul>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+            </section>
 
-		<script>
+          </section>
+          <section>
+            <section>
+              <h3>Password Hygiene
+              </h3>
+              <blockquote>
+                Expiring passwords are the dumbest thing ever, as if password informations constantly leak outside and after 3 months every knows you password. Bruteforcing is dumb and most of the time successless. Grabbing it from the source is the way to go. All the password security policies are doing it wrong, making it hard to remember and easy to guess you added a "1!" at the end of your pet's name. Related: http://xkcd.com/936/
+              </blockquote>
+            </section>
+            <section>
+              Cosa fa la fonte?
+            </section>
+            <section>
+              Attenzione: il Bruteforcing offline non è da sottovalutare:
+              http://arstechnica.com/security/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/
+              http://arstechnica.com/security/2013/10/how-the-bible-and-youtube-are-fueling-the-next-frontier-of-password-cracking/
+            </section>
+            <section>
+              Ci sarebbero tante belle soluzioni per evitare l'uso di password:
+              <ul>
+                <li class="fragment">
+                  <a href="http://openid.net/">OpenID
+                  </a>
+                </li>
+                <li class="fragment">
+                  <a href="http://www.mozilla.org/persona/">Mozilla Persona
+                  </a>
+                </li>
+                <li class="fragment">Client-side certificates (ne parleremo dopo)
+                </li>
+              </ul>
+            </section>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+            <section>
+              <p>Contromisura: mai riutilizzare le password
+              </p>
+              <p class="fragment">
+                "Ma è di una scomodità allucinante!"
+              </p>
+              <p class="fragment">
+                Keepass/Keepassx
+              </p>
+              <p class="fragment">
+                Lastpass
+              </p>
+              <p class="fragment">
+                Keyring dell'OS, Google Chrome, Master Password di Firefox...
+              </p>
+            </section>
+          </section>
+          <section>
+            <section>
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+              <p>
+                Ora passiamo ai "benintenzionati"
+              </p>
+              <img class="fragment" height="500" src="images/nsa.svg"/>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
 
-		</script>
 
-	</body>
-</html>
+
+            </section>
+            <section>
+              <p>
+                <a href="http://www.wired.com/threatlevel/2013/10/lavabit_unsealed/">Caso Lavabit
+                </a> (e 
+                <a href="http://www.usatoday.com/story/money/columnist/rieder/2013/08/12/reider-nsa-snooping-collateral-damage/2642557/">Silent Circle
+                </a>)
+              </p>
+              <img src="images/lavabit.gif"/>
+            </section>
+            <section>
+              <a href="http://www.businessinsider.com/the-story-of-joseph-nacchio-and-the-nsa-2013-6">Qwest e Joseph Nacchio
+              </a>
+
+
+              <blockquote class="fragment">
+                shortly after the Sept. 11 terrorist attacks America's three largest telecoms [AT&amp;T, Verizon, BellSouth] signed contracts to provide the NSA with detailed call records from hundreds of millions of people across the country.
+              </blockquote>
+              <blockquote class="fragment">
+                Qwest's refusal to participate "left the NSA with a hole in its database" since the company served local phone service to 14 million customers in 14 states.
+              </blockquote>
+              <blockquote class="fragment">
+                Nacchio alleged that the government stopped offering the company lucrative contracts [worth hundreds of millions of dollars] after Qwest refused to cooperate with a National Security Agency surveillance program in February 2001.
+              </blockquote>
+            </section>
+            <section>
+
+              <blockquote>
+                Qwest stock began a sharp decline in May 2001 [...] In 2002, Qwest admitted to false accounting [...] Nacchio was sentenced to six years in federal prison for insider trading
+              </blockquote>
+            </section>
+
+            <section>
+              <a href="http://blogs.wsj.com/washwire/2013/08/23/nsa-officers-sometimes-spy-on-love-interests/">LOVEINT
+              </a>
+
+              <blockquote>
+                NSA had violated privacy rules on nearly 3,000 occasions in a one-year period [...] The LOVEINT violations involved overseas communications, officials said, such as spying on a partner or spouse. In each instance, the employee was punished either with an administrative action or termination.
+              </blockquote>
+
+            </section>
+            <section>
+
+              <a href="https://www.schneier.com/blog/archives/2011/02/uk_immigration.html">UK Immigration Officer Puts Wife on the No-Fly List
+              </a>
+
+            </section>
+            <section>
+
+              <p>Abbiamo già diversi casi di abuso di potere, completa opacità e totale mancanza di responsabilizzazione.
+              </p>
+
+              <p class="fragment">Purtroppo, non è una cosa così inaspettata:
+
+              </p>
+              <ul class="horz">
+                <li class="fragment">
+
+                  <img src="images/nsa.svg"/>
+                  <p>Agenzia per la sicurezza nazionale
+                  </p>
+                </li>
+                <li class="fragment">
+
+                  <img src="images/dhs.png"/>
+                  <p>Dipartimento per la sicurezza della patria
+                  </p>
+                </li>
+                <li class="fragment">
+
+                  <img src="images/stasi.png"/>
+                  <p>Stasi, State Security
+                  </p>
+                  <p>
+                    Sicurezza dello Stato
+                  </p>
+                </li>
+                <li class="fragment">
+
+                  <img src="images/kgb.png"/>
+                  <p>KGB, Committee for State Security
+                  </p>
+                  <p>Comitato per la Sicurezza dello Stato
+                  </p>
+                </li>
+              </ul>
+
+            </section>
+            <section>
+              Purtroppo, quello delle Corti Segrete non è un caso isolato nelle democrazie "occidentali"
+
+              <p>
+                <a href="http://www.austlii.edu.au/au/legis/cth/consol_act/acca2002289/s29b.html">Australian Crime Commission Act
+                </a>
+              </p>
+
+            </section>
+            <section>
+              <h3>e per quanto riguarda l'italia?
+              </h3>
+
+              <p>Noi abbiamo la "fortuna" di avere governanti che confondono fibre ottiche con dei tunnel
+              </p>
+
+              <img height="500" src="images/tunnelgelmini.jpg"/>
+            </section>
+
+            <section>
+              In compenso, il malware col quale vengono
+              <a href="https://citizenlab.org/2012/10/backdoors-are-forever-hacking-team-and-the-targeting-of-dissent/"> monitorati attivisti per i diritti umani negli Emirati Arabi Uniti
+              </a>
+              , è un prodotto
+              <a href="http://hackingteam.it/">tutto italiano
+              </a>
+
+            </section>
+
+            <section>
+              <p>Solo per l'intelligence americana nel 2013, vengono investiti 
+              <a href="http://www.washingtonpost.com/world/national-security/black-budget-summary-details-us-spy-networks-successes-failures-and-objectives/2013/08/29/7e57bb78-10ab-11e3-8cdd-bcdc09410972_story.html">52.6 miliardi di dollari
+              </a>
+              </p>
+
+              <p>
+                Di questi,
+                <a href="http://www.wired.com/threatlevel/2013/08/black-budget/?mbid=social11342874">11 miliardi sono solo per sovvertire, "rompere" la moderna crittografia
+                </a>
+              </p>
+
+
+
+            </section>
+            <section>
+              <p>Data Center in Utah, capacità stimata fra i 3 e i 12 Exabyte (1EB = 1,000,000,000 GB)
+              </p>
+
+              <img src="images/utahcenter.jpg"/>
+            </section>
+
+            <section>
+
+              <p>In alcuni casi, si difendono queste pratiche dicendo che si tratta solo di raccolta di "metadati", non è spionaggio...
+              </p>
+              <p>Il problema è che con i metadati ottengono sorveglianza, conoscono tutti quelli coi quali comunicate, e viceversa per le persone che conoscete
+              </p>
+              <p>Questo è il primo mattone per poter esaminare, censire, proibire e perseguire tutto ciò che finora è stata libera associazione
+              </p>
+
+            </section>
+            <section>
+              L'utilizzo di backdoor, l'indebolimento di alcuni strumenti crittografici, la corruzione delle CA possono anche essere sfruttate da malintenzionati con più organizzazione e risorse.
+
+            </section>
+
+            <section>
+
+              L'aggregazione indiscriminata di tutti questi dati è pericolosa proprio perchè permette di creare profili che avranno conseguenze molto al di la nel tempo (le persone cambiano, le leggi cambiano)
+
+            </section>
+          </section>
+
+          <section>
+            <section>
+              <h3>Crittografia
+              </h3>
+              Ne abbiamo accennato, ma di cosa si tratta?
+            </section>
+
+            <section>
+              <h3>Cifrario di Cesare
+              </h3>
+              <img src="images/caesar_cypher.png"/>
+              <br/>
+              <img src="images/caesar_example.png"/>
+
+
+            </section>
+
+
+            <section>
+              <h3>Crittografia asimmetrica
+              </h3>
+              <p>
+                Utile quando non si ha un canale sicuro sul quale scambiare la chiave per una crittazione simmetrica
+              </p>
+
+
+            </section>
+
+            <section>
+              Per mandare dei messaggi privati, ovviamente il primo step consiste nel fornire la chiave pubblica all'interlocutore.
+
+
+            </section>
+
+            <section>
+
+              12 =
+              <span class="fragment">2*2*3
+              </span>
+            </section>
+            <section>
+
+              437 =
+              <span class="fragment">19*23
+              </span>
+            </section>
+            <section>
+
+              1148487369611041 =
+              <span class="fragment">?
+              </span>
+            </section>
+
+            <section>
+              <h3>Scambio di chiavi
+              </h3>
+              <img src="images/dh.png"/>
+            </section>
+
+
+          </section>
+
+          <section>
+            <section>
+              <h3>TLS
+              </h3>
+              <p>
+                Il primo step di fornire la chiave pubblica, è gestito tramite certificati x.509
+              </p>
+              <p class="fragment">
+                Su questo sono basati https e le versioni sicure di altri protocolli, come smtp, imap, xmpp...
+              </p>
+            </section>
+            <section>
+              <h3>Tutto risolto?
+              </h3>
+              <ul>
+                <li class="fragment">
+                  Centinaia di Certification Authority fidate, ognuna può autenticare ogni altro dominio, e la loro lista può venire aggiornata transparentemente
+                </li>
+                <li class="fragment">delle CA hanno firmato certificati per indirizzi come 192.168.1.2
+                </li>
+                <li class="fragment">6000 certificati sono stati firmati per localhost
+                </li>
+                <li class="fragment">Alcuni paesi hanno CA ma non le usano... dopo quanto tempo ce ne si accorgerebbe se venissero compromesse?
+                </li>
+                <li class="fragment">Nel 2010, 500 certificati vulnerabili (debian openssl bug) erano ancora validi
+                </li>
+                <li class="fragment">Booz Allen Hamilton è fra le subordinate CA
+                </li>
+                <li class="fragment">Un anno dopo la scoperta della compromissione di Diginotar, i loro certificati erano ancora accettati 
+                <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2031409">[1]
+                </a>
+                <a href="http://www.rijksoverheid.nl/ministeries/fin/nieuws/2012/07/23/belastingdienst-waarschuwt-adviseurs-die-nog-gebruik-maken-van-diginotar-certificaten.html">[2]
+                </a>
+                </li>
+              </ul>
+
+              <p class="fragment">
+                <a href="https://www.eff.org/files/DefconSSLiverse.pdf">SSL observatory
+                </a> 
+              </p>
+
+            </section>
+            <section>
+              <blockquote>
+                <a href="http://www.mail-archive.com/cryptography@metzdowd.com/msg12372.html">The PKI industry has been a sham since day one
+                </a>
+              </blockquote>
+              <p class="fragment">
+                In pratica, abbiamo delegato la gestione di una Web Of Trust (Hierarchy of Trust)
+              </p>
+              <p class="fragment">
+                Cosa possiamo fare?
+              </p>
+              <p class="fragment">DIY!
+              </p>
+              <ul>
+                <li class="fragment">Certificate pinning (
+                <a href="http://blog.chromium.org/2011/06/new-chromium-security-features-june.html">implementato in Chrome dalla versione 13
+                </a>)
+                <a href="https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning">[Owasp guide]
+                </a> (Il controllo torna a chi pubblica il certificato, ma rende più difficoltoso aggiornarli)
+                </li>
+                <li class="fragment">Self Signing?
+                </li>
+                <li class="fragment">
+                  <a href="http://www.cacert.org/policy/AssurancePolicy.php">CACert's assurance policy
+                  </a>
+                </li>
+                <li class="fragment">
+                  <a href="http://tack.io/">TACK
+                  </a>
+                </li>
+                <li class="fragment">
+                  <a href="http://convergence.io/">Convergence
+                  </a>
+                </li>
+              </ul>
+
+
+            </section>
+            <section>
+              <h3>Altri problemi
+              </h3>
+              <ul>
+                <li class="fragment">nel web si possono mischiare pagine servite su HTTP che linkano pagine HTTPS, recipe for disaster (vedi
+                <a href="http://www.thoughtcrime.org/software/sslstrip/">sslstrip
+                </a>)
+                </li>
+                <li class="fragment">I browser delegano la scelta dell'accettare una connessione non sicura agli utenti
+                </li>
+                <li class="fragment">
+                  <a href="https://factorable.net/">Le chiavi generate possono essere deboli!
+                  </a> E di ciò i browser non vi possono avvertire (La chiavi deboli potrebbero essere un problema anche per altri sistemi, come
+                  <a href="http://nosuchlabs.com/">GPG
+                  </a>)
+                </li>
+                <li class="fragment">
+                  <a href="https://www.trustworthyinternet.org/ssl-pulse/">Lo stato attuale dei più diffusi siti internet
+                  </a>
+                </li>
+              </ul>
+
+
+            </section>
+            <section>
+              <h3>Un'altra soluzione
+              </h3>
+
+              <p>Client Side Certificates: L'idea è che anche voi forniate un certificato al server al quale vi connettete, che firmerà la vostra chiave pubblica (come una CA) per le successive connessioni, rendendo quindi impossibili diversi attacchi Mitm
+              </p>
+              <p>
+                Non solo l'utente in questo modo non si deve ricordare una password, ma non essendoci quest'ultima, non viene neanche trasmessa... né in chiaro né crittata
+              </p>
+
+              <p>Per la creazione di un certificato client side, esiste apposta l'elemento
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/keygen">keygen in HTML5
+              </a> 
+              </p> 
+
+              <a href="http://wiki.cacert.org/Technology/KnowledgeBase/ClientCerts">Client Certificate FAQ
+              </a> 
+
+
+            </section>
+
+            <section>
+
+              Questo per quanto riguarda HTTP(S), ma che altri protocolli usiamo per comunicare?
+            </section>
+          </section>
+          <section>
+            <h3>Skype
+            </h3>
+
+            <blockquote>I will not tell you whether we can listen or not
+            </blockquote>
+            Skype's Chief Security Officer
+
+            <p>
+              Skype ha sempre fornito una
+              <a href="http://www.informationweek.com/telecom/voip/skype-defends-voip-im-monitoring-in-chin/210605439"> versione separata del client per gli utenti cinesi
+              </a>
+            </p>
+            <p>
+              Da febbraio 2012, 
+              <a href="http://arstechnica.com/business/2012/05/skype-replaces-p2p-supernodes-with-linux-boxes-hosted-by-microsoft/">Skype ha abbandonato la sua architettura P2P
+              </a>
+            </p>
+
+          </section>
+          <section>
+            <h3>IMessage
+            </h3>
+
+            <p>In teoria, tutto crittato fra mittente e destinatario, Apple non può accedervi
+            </p>
+
+            <p>In pratica:
+            <a href="http://arstechnica.com/security/2013/06/can-apple-read-your-imessages-ars-deciphers-end-to-end-crypto-claims/">
+              con iCloud Apple può accedere liberamente ai vostri dati
+            </a>
+            </p>
+            <p>E se anche disattivate il backup iCloud, 
+            <a href="http://blog.quarkslab.com/imessage-privacy.html">Apple conosce la vostra password, ed ha accesso indiscriminato ai certificati
+            </a>
+            </p>
+
+          </section>
+          <section>
+            <h3>Whatsapp
+            </h3>
+            <p>Una sequela di problemi, di cui l'ultimo è
+            <a href="https://blog.thijsalkema.de/blog/2013/10/08/piercing-through-whatsapp-s-encryption/">usare la stessa chiave RC4 per i messaggi in entrata ed in uscita
+            </a>
+            </p>
+
+          </section>
+          <section>
+            <section>
+              <h3>Email
+              </h3>
+              <pre>
+From: paolo_grasselli@example.com
+To: bglug@example.com
+Subject: Paolo Grasselli is out of the office.
+
+I will be out of the office starting  19/03/2008 and will not return until
+21/03/2008.
+
+I will respond to your message when I return.
+
+=
+</pre>
+            </section>
+            <section>
+              <h3>GPG
+              </h3>
+              <img src="images/keysigning.jpg"/>
+            </section>
+            <section>
+              <pre>
+From: noyse &lt;lappeso@example.com&gt;
+To: Dario Bertini &lt;berdario@example.com&gt;
+Subject: Re: Python &amp; Hacklab
+
+-----BEGIN PGP MESSAGE-----
+Charset: UTF-8
+Version: GnuPG v1.4.11 (GNU/Linux)
+Comment: Using GnuPG with Thunderbird - http://www.enigmail.net/
+
+hQIMAxIGK+NFZpG5AQ/9Ensz+xK2yi76wDjeqB/2FW8qfHA+Dm0LRCbhju72tmQO
++2CjfZ5aeCiOke3shRUYwX1+8oTN/USOKe/8m67YY4bSVGhDc3u7Dr1PV0VBx/RR
+xoOPe0uaqjBhw8+rE0ciu7IXpG8ZGy06PfqNW44gAhY4Sqsy9gXsL9w0XlkJyEcD
+UUQBW4VofaAJHODa7gIMWk/WKcoWezxK3smY4SHzoD8S6OSFtHuB9XrJgblMTZcw
+ROd2LBYNm8Eo820R7WRzDRXk6o2RiD0RZx71O1ahjbxdj00myU8qOXSaxeeZvuPJ
+qBfgUOgZ6XIifzS6T7YCwjb28C4LJsKJgZrXudtfh/j2VmOtaXB6CkVitZwtGuKH
+8dn+iZopbs7Z7c3wpPyTQ9Mn0U+AvlR/8Vw1RUWcCFTJCXO58s2SXS900s4Krvdu
+Fqkyk0s8EbsEUqL28hKj1eweJYEYFiycxrXZbHvuKQ//rSsK6HBcs7/tB/BCYiJZ
+gNZzeevPfb603ocKBypAR5CaapE5NMgu/QqZ1XK9gMkY0Ee97wuvtdLPvH1Gbp6r
+1/Y2fu2PeLltdppUfZwO8SI2VGu/EqabqC/U8cysI3PkMUPCh+36fHK4zBOD7Sl8
+maJWTJhcNkHf3eODrX3o0BZyJsB/zDj2hfJVr834hHE4p3WiKMMCGi3KZ2R3Q2HS
+k8Qn3w4amUCK6GalXQHKW2gdxainGdiN5HDgQSkYmnYLhLYNGjG5zmMm7ytNDC2Q
+kW+D+KSn3RcNcnY6SV2RN11JjI09UeJVoN3fKwPsdNXOM7WPGTm2XcWmXtfE1bLy
+WG+2+l9QSD/UFTA+tPOdxh9bmTQz+EjPiZj7HJCIUtQJFOyFKdVs1zTTr+3cyVEv
++aXad7OmQvN40IrjqJDSRLMhKLDtyxJAb3CN0kAGu3Zo0QvnofI1lJGJszKEe6DF
+kB6V7ufUYdb/W6eIWsq6R14FARsG97F6jwQ2J4UaFFvQrx3EnndW77JZr7e3CI4T
+IX7JoK1ImxC+Note1wttR7eR4UfimhENKBuwYoNOMDimESRa0Vczx0rOiZiBqk5b
+vHPc
+=b+ew
+-----END PGP MESSAGE-----                                            
+</pre>
+            </section>
+          </section>
+          <section>
+            <h3>XMPP
+            </h3>
+
+            <p>È possibile usare GPG, e
+            <a href="http://xmpp.org/extensions/xep-0178.html">TLS è di uso comune
+            </a>  per la connessione ai server (anche se
+            <a href="https://blog.thijsalkema.de/blog/2013/08/26/the-state-of-tls-on-xmpp-1/">diversi server sono malconfigurati
+            </a>)
+            </p>
+            <p>È specificato anche il
+            <a href="http://xmpp.org/extensions/xep-0257.html">supporto per i client side certificates
+            </a> (ed implementati in server come
+            <a href="http://prosody.im/doc/xeplist">Prosody
+            </a>)
+            </p>
+            <p>L'
+            <a href="https://otr.cypherpunks.ca/Protocol-v2-3.1.0.html">Off The Record
+            </a> messaging è la soluzione principe per riservatezza ed autenticazione, ma fornisce anche "forward secrecy" e negabilità dell'autenticazione
+            </p>
+          </section>
+          <section>
+            <section>
+              <h3>TorChat
+              </h3>
+              <img src="images/tor1.png"/>
+            </section>
+            <section>
+              <img src="images/tor2.png"/>
+            </section>
+            <section>
+              Ogni utente espone un "servizio nascosto" Tor, la connessione fra 2 utenti viene quindi crittata e passa fra 6 proxy diversi
+            </section>
+          </section>
+          <section>
+            <h3>
+              <a href="https://bitmessage.org/">BitMessage
+              </a>
+            </h3>
+            Decentralizzato e P2P
+          </section>
+
+        </div>
+
+      </div>
+
+      <script src="lib/js/head.min.js">
+      </script>
+      <script src="js/reveal.min.js">
+      </script>
+
+      <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+        });
+
+      </script>
+
+    </body>
+  </html>
